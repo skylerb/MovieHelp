@@ -52,7 +52,6 @@ public class ActivityHome extends Activity {
         	    	
         			SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
         			String serverPref = sharedPref.getString("pref_server", "");
-        			//System.out.println("Home: Server Address = " + serverPref);
         			final String movieTitle = movieField.getText().toString(); 
         			if(serverPref.length() > 0) {
         					if(movieTitle.length() > 0) {
