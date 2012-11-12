@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="holo_blue_light">#ff33b5e5</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="light_grey">#ffcccccc</color>
+    <color name="grey">#ff888888</color>
+    <color name="dark_grey">#ff212121</color>
+    <color name="full_transparent">#00000000</color>
+    <color name="lighter_transparent">#20ffffff</color>
+    <color name="light_transparent">#40ffffff</color>
+    <color name="dark_transparent">#61000000</color>
+    <color name="darker_transparent">#c1000000</color>
+    <color name="red">#ffdd0000</color>
+    <color name="dark_red">#ff990000</color>
+    <color name="primary_font">@color/white</color>
+    <color name="darker_grey">#ff111111</color>
+    <color name="videos_red">#ffc74b46</color>
+    <color name="actionbar_background">#ff000000</color>
+    <color name="actionbar_background_stacked">#ff4d1d1d</color>
+    <color name="link_highlight">@color/dark_red</color>
+    <color name="background_remote">#ff5c5c5c</color>
+    <color name="clickable_pressed_background">#ff454d6c</color>
+    <color name="panel_dark_background">#30000000</color>
+    <color name="video_item_thumbnail_background">#ff4d1d1d</color>
+    <color name="video_item_details_background">#b2331313</color>
+    <color name="question_details_background">@color/video_item_details_background</color>
+    <color name="button_background">@color/video_item_details_background</color>
+    <color name="button_pressed">@color/clickable_pressed_background</color>
+    <color name="show_item_background">#b2331313</color>
+    <color name="movie_disabled_mask">#90000000</color>
+</resources>

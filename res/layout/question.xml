@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/striped_background"
+    android:orientation="vertical"
+   	android:paddingRight="8.0dip" 
+    android:paddingLeft="8.0dip"
+    android:paddingBottom="8.0dip"  >
+    
+   	<TextView android:id="@+id/textQuestionTitle"
+       	android:layout_width="fill_parent"
+       	android:layout_height="wrap_content"
+       	android:gravity="center_vertical"
+       	android:textSize="21.0dip"
+       	android:textColor="#FFFFFF"
+       	android:paddingTop="9.0dip"
+       	android:paddingBottom="5.0dip"
+       	android:text="QUESTION #1" />
+	<LinearLayout android:layout_height="wrap_content" 
+	    android:layout_width="match_parent" 
+	    android:background="@color/video_item_details_background" 
+	    android:orientation="vertical"
+	    android:paddingRight="8.0dip" 
+	    android:paddingTop="5.0dip" 
+	    android:paddingLeft="8.0dip"
+	    android:paddingBottom="8.0dip" >   	
+	    <TextView
+	        android:id="@+id/textQuestion"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	       	android:textColor="@color/white"
+	       	android:textSize="14.0dip"
+	       	android:paddingBottom="8.0dip"
+	        android:text="" />
+	
+	    <RadioGroup
+	        android:id="@+id/radioGroup"
+	        android:layout_width="match_parent"
+	        android:layout_height="0dip"
+	        android:layout_weight="1" >
+	        <RadioButton
+	            android:id="@+id/radioYes"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:checked="true"
+	            android:text="Yes"
+	            android:textColor="@color/white" 
+	            android:textSize="14.0dip"/>
+	        <RadioButton
+	            android:id="@+id/radioNo"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="No"
+	            android:textColor="@color/white"
+	            android:textSize="14.0dip" />
+	        <RadioButton
+	            android:id="@+id/radioIdk"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/dont_know"
+	            android:textColor="@color/white"
+	            android:textSize="14.0dip" />
+	    </RadioGroup>
+    </LinearLayout>
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="12.0dip"      
+        android:layout_marginTop="3.0dip"  
+        android:layout_marginLeft="0.0dip"
+        android:layout_marginRight="0dip"
+        android:text="Next"
+        android:textColor="@color/white"
+        android:background="@drawable/button_background"
+        android:drawableRight="@drawable/ic_chevron_right" />
+    
+    
+
+    
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<resources>
+
+    <string name="app_name">MovieHelp</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_activity_home">MovieHelp</string>
+    <string name="Main_empty_list">No Recommended Movies Found</string>
+    <string name="title_activity_activity_settings">Settings</string>
+    <string name="pref_server">Server Address</string>
+    <string name="pref_server_summary">Edit Server IP Address</string>
+    <string name="dont_know">I don\'t know</string>
+    <string name="title_activity_activity_movies">ActivityMovies</string>
+
+</resources>

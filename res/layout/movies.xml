@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/striped_background" >
+
+    <ListView
+        android:id="@+id/movieList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbarStyle="outsideOverlay"
+        android:fadingEdge="none"
+        android:paddingLeft="8.0dip"
+        android:paddingRight="8.0dip"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="2.0dip"
+        android:paddingBottom="8.0dip"/>
+
+</LinearLayout>
