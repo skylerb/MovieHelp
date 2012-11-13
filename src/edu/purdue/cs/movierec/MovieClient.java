@@ -151,7 +151,6 @@ public class MovieClient {
 			while(!isInterrupted()) {
 				try {
 					int command = ois.readInt();
-					System.out.println("Command: " + command);
 					Message msg = readHandler.obtainMessage();
 					
 					switch(command) {

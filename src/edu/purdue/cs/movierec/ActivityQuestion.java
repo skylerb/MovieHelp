@@ -90,8 +90,7 @@ public class ActivityQuestion extends Activity {
 					 questionNum++;
 					 radioYes.setChecked(true);
 				 } else if(msg.what == 22) { //S_MOVIE_SEND
-					 //Read in all >= 5 movies into memory
-					 System.out.println("THERE YOU ARE!");
+					 //Read in all movies into memory
 					 Movie m = (Movie)msg.obj;
 					 movies.add(m);
 					 mc.movieSaved();
