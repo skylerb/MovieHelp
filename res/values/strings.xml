@@ -9,5 +9,8 @@
     <string name="pref_server_summary">Edit Server IP Address</string>
     <string name="dont_know">I don\'t know</string>
     <string name="title_activity_activity_movies">ActivityMovies</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_activity_movie">ActivityMovie</string>
+    <string name="rec">RECOMMENDATIONS</string>
 
 </resources>

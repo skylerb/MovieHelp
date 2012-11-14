@@ -5,7 +5,6 @@
     </style>
     <style parent="@android:style/Widget.Holo.ActionBar" name="ActionBar"> 
         <item name="android:background">@color/actionbar_background</item>
-        <item name="android:title">@string/app_name</item>
         <item name="android:backgroundStacked">@color/actionbar_background_stacked</item> 
    	</style>
    	<style parent="@android:style/Theme.Holo" name="SettingsTheme"> 

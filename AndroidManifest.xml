@@ -28,10 +28,15 @@
             android:name=".ActivitySettings"
             android:label="@string/title_activity_activity_settings"
             android:theme="@style/SettingsTheme" />
-        <activity android:name=".ActivityQuestion"
+        <activity
+            android:name=".ActivityQuestion"
             android:configChanges="orientation|screenSize" />
-        <activity android:name=".ActivityMovies"
-            android:configChanges="orientation|screenSize"/>
+        <activity
+            android:name=".ActivityMovies"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".ActivityMovie"
+            android:label="@string/title_activity_activity_movie" />
     </application>
 
 </manifest>

@@ -12,6 +12,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.preference.PreferenceManager;
+import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.inputmethod.InputMethodManager;
@@ -41,43 +42,54 @@ public class ActivityQuestion extends Activity {
 	}
 	
 	 @Override
-	    public void onCreate(Bundle savedInstanceState) {
-	        super.onCreate(savedInstanceState);
-	        setContentView(R.layout.question);
-	        
-	        appState = (MovieApp)getApplicationContext();
-	        radioGroup = (RadioGroup)findViewById(R.id.radioGroup);
-	        radioYes = (RadioButton)findViewById(R.id.radioYes);
-	        
-	        createHandler();
-	        
-	        mc = appState.getMovieClient();
-	        mc.setReadHandler(handler);
-	        mc.ready();
-	        
-	        questionTitleText = (TextView) findViewById(R.id.textQuestionTitle);
-	        questionText = (TextView) findViewById(R.id.textQuestion);
-	        
-	        final Button nextButton = (Button) findViewById(R.id.buttonNext);
-	        nextButton.setClickable(true);
-	        
-	        nextButton.setOnClickListener(new OnClickListener() {
-        		public void onClick(View v) {
-        			//Disable button to prevent multiple clicks
-        			int value = 0;
-        			int selectedId = radioGroup.getCheckedRadioButtonId();
-        			radioButton = (RadioButton)findViewById(selectedId);
-        			if(radioButton.getText().equals("Yes")) {
-        				value = 1;
-        			} else if (radioButton.getText().equals("No")) {
-        				value = -1;
-        			}
-        			//Get value of radio buttons
-        			
-        			mc.answerQuestion(value);
-        		}
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.question);
+        
+        appState = (MovieApp)getApplicationContext();
+        radioGroup = (RadioGroup)findViewById(R.id.radioGroup);
+        radioYes = (RadioButton)findViewById(R.id.radioYes);
+        
+        createHandler();
+        
+        mc = appState.getMovieClient();
+        mc.setReadHandler(handler);
+        mc.ready();
+        
+        questionTitleText = (TextView) findViewById(R.id.textQuestionTitle);
+        questionText = (TextView) findViewById(R.id.textQuestion);
+        
+        final Button nextButton = (Button) findViewById(R.id.buttonNext);
+        nextButton.setClickable(true);
+        
+        nextButton.setOnClickListener(new OnClickListener() {
+    		public void onClick(View v) {
+    			//Disable button to prevent multiple clicks
+    			int value = 0;
+    			int selectedId = radioGroup.getCheckedRadioButtonId();
+    			radioButton = (RadioButton)findViewById(selectedId);
+    			if(radioButton.getText().equals("Yes")) {
+    				value = 1;
+    			} else if (radioButton.getText().equals("No")) {
+    				value = -1;
+    			}
+    			//Get value of radio buttons
+    			
+    			mc.answerQuestion(value);
+    		}
         });
 	 }
+	 
+	 @Override
+		public boolean onKeyDown(int keyCode, KeyEvent event)  {
+		    if (keyCode == KeyEvent.KEYCODE_BACK && event.getRepeatCount() == 0) {
+		    	mc.quit();
+		    	mc.disconnect();
+		    	appState.clearMemory();
+		    }
+
+		    return super.onKeyDown(keyCode, event);
+		}
 	 
 	 public void createHandler() {
 		 handler = new Handler() {

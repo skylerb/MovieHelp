@@ -131,6 +131,19 @@ public class MovieClient {
 		});
 	}
 	
+	void quit() {
+		writeHandler.post(new Runnable() {
+			public void run() {
+				try {
+					synchronized(socket) {
+						oos.writeInt(11);
+						oos.flush();
+					}
+				} catch (IOException ie) {}
+			}
+		});
+	}
+	
 	void ready() {
 		writeHandler.post(new Runnable() {
 			public void run() {

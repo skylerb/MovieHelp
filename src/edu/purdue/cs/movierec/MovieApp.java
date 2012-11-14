@@ -8,6 +8,7 @@ public class MovieApp extends Application {
 	
 	private MovieClient movieClient;
 	private List<Movie> movies;
+	private Movie singleMovie;
 	
 	public void setMovieClient(MovieClient mc) {
 		this.movieClient = mc;
@@ -25,8 +26,17 @@ public class MovieApp extends Application {
 		return movies;
 	}
 	
+	public void setMovie(Movie m) {
+		this.singleMovie = m;
+	}
+	
+	public Movie getMovie() {
+		return singleMovie;
+	}
+	
 	public void clearMemory() {
 		this.movies.clear();
 		this.movieClient = null;
+		this.singleMovie = null;
 	}
 }
