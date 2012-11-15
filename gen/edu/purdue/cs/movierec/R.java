@@ -56,34 +56,41 @@ public final class R {
         public static final int nr=0x7f02000a;
         public static final int pg=0x7f02000b;
         public static final int pg13=0x7f02000c;
-        public static final int r=0x7f02000d;
-        public static final int striped_background=0x7f02000e;
-        public static final int tv14=0x7f02000f;
-        public static final int ur=0x7f020010;
-        public static final int weddingcrashers=0x7f020011;
+        public static final int prometheus=0x7f02000d;
+        public static final int r=0x7f02000e;
+        public static final int striped_background=0x7f02000f;
+        public static final int tv14=0x7f020010;
+        public static final int ur=0x7f020011;
+        public static final int weddingcrashers=0x7f020012;
     }
     public static final class id {
         public static final int Movie=0x7f090000;
         public static final int Search=0x7f090001;
-        public static final int buttonNext=0x7f090013;
-        public static final int coverArt=0x7f090006;
+        public static final int actors=0x7f090008;
+        public static final int actors_header=0x7f090007;
+        public static final int buttonNext=0x7f090019;
+        public static final int coverArt=0x7f09000c;
+        public static final int directors=0x7f09000a;
+        public static final int directors_header=0x7f090009;
         public static final int fanart=0x7f090002;
-        public static final int listHeader=0x7f090005;
-        public static final int menu_settings=0x7f090014;
-        public static final int movieGenres=0x7f09000a;
-        public static final int movieList=0x7f09000b;
-        public static final int movieListLandscape=0x7f09000c;
-        public static final int movieTitle=0x7f090007;
-        public static final int movieYear=0x7f090008;
+        public static final int genres=0x7f090006;
+        public static final int genres_header=0x7f090005;
+        public static final int listHeader=0x7f09000b;
+        public static final int menu_settings=0x7f09001a;
+        public static final int movieGenres=0x7f090010;
+        public static final int movieList=0x7f090011;
+        public static final int movieListLandscape=0x7f090012;
+        public static final int movieTitle=0x7f09000d;
+        public static final int movieYear=0x7f09000e;
         public static final int movie_subtitle=0x7f090004;
         public static final int movie_title=0x7f090003;
-        public static final int mpaaIcon=0x7f090009;
-        public static final int radioGroup=0x7f09000f;
-        public static final int radioIdk=0x7f090012;
-        public static final int radioNo=0x7f090011;
-        public static final int radioYes=0x7f090010;
-        public static final int textQuestion=0x7f09000e;
-        public static final int textQuestionTitle=0x7f09000d;
+        public static final int mpaaIcon=0x7f09000f;
+        public static final int radioGroup=0x7f090015;
+        public static final int radioIdk=0x7f090018;
+        public static final int radioNo=0x7f090017;
+        public static final int radioYes=0x7f090016;
+        public static final int textQuestion=0x7f090014;
+        public static final int textQuestionTitle=0x7f090013;
     }
     public static final class layout {
         public static final int main=0x7f030000;
@@ -102,8 +109,11 @@ public final class R {
     }
     public static final class string {
         public static final int Main_empty_list=0x7f060003;
+        public static final int actors_label=0x7f06000d;
         public static final int app_name=0x7f060000;
+        public static final int directors_label=0x7f06000e;
         public static final int dont_know=0x7f060007;
+        public static final int genres_label=0x7f06000c;
         public static final int hello_world=0x7f060009;
         public static final int menu_settings=0x7f060001;
         public static final int pref_server=0x7f060005;
@@ -117,6 +127,8 @@ public final class R {
     public static final class style {
         public static final int ActionBar=0x7f070001;
         public static final int AppTheme=0x7f070000;
+        public static final int Metadata_Content=0x7f070004;
+        public static final int Metadata_Header=0x7f070003;
         public static final int SettingsTheme=0x7f070002;
     }
     public static final class xml {

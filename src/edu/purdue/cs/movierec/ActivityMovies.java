@@ -1,15 +1,11 @@
 package edu.purdue.cs.movierec;
 
 import java.util.List;
-
 import android.os.Bundle;
-import android.os.Handler;
 import android.app.ActionBar;
 import android.app.Activity;
-import android.app.ListActivity;
 import android.content.Intent;
 import android.content.res.Configuration;
-import android.view.ActionMode;
 import android.view.Display;
 import android.view.KeyEvent;
 import android.view.Menu;
@@ -19,11 +15,9 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.GridView;
 import android.widget.ListView;
-import android.widget.Toast;
 
 public class ActivityMovies extends Activity {
 	private MovieClient mc;
-	private Handler handler;
 	
 	MovieApp appState;
 	ActionBar actionBar;
@@ -31,7 +25,6 @@ public class ActivityMovies extends Activity {
 	List<Movie> movies;
 	private ListView movieListView;
 	private GridView movieGridView;
-	private boolean PORTRAIT = true;
 	
 	@Override
 	public void onConfigurationChanged(Configuration newConfig) {

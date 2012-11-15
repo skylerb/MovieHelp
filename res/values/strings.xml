@@ -12,5 +12,8 @@
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_activity_movie">ActivityMovie</string>
     <string name="rec">RECOMMENDATIONS</string>
+    <string name="genres_label">Genres</string>
+    <string name="actors_label">Starring</string>
+    <string name="directors_label">Directed By</string>
 
 </resources>

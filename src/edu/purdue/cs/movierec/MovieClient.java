@@ -196,11 +196,13 @@ public class MovieClient {
 								case 8: mpaa = R.drawable.nr; break;
 								default: mpaa = R.drawable.ur; break;
 							}
-							List<String> genres = (List<String>)ois.readObject();							
+							List<String> genres = (List<String>)ois.readObject();
+							List<String> actors = (List<String>)ois.readObject();
+							List<String> directors = (List<String>)ois.readObject();
 							int filelength = ois.readInt();
 							byte[] buf = (byte[])ois.readObject();
 							Bitmap bmp = BitmapFactory.decodeByteArray(buf, 0, filelength);
-							Movie m = new Movie(title, mpaa, year, genres, bmp);
+							Movie m = new Movie(title, mpaa, year, genres, actors, directors, bmp);
 							msg.what = command;
 							msg.obj = m;
 							readHandler.sendMessage(msg);

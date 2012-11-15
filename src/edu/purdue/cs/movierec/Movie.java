@@ -11,13 +11,17 @@ public class Movie {
 	private int mpaa;
 	private int year;
 	private List<String> genres =  new ArrayList<String>();
+	private List<String> actors = new ArrayList<String>();
+	private List<String> directors = new ArrayList<String>();
 	private Bitmap coverart;
 	
-	public Movie(String title, int mpaa, int year, List<String> genres, Bitmap image) {
+	public Movie(String title, int mpaa, int year, List<String> genres, List<String> actors, List<String> directors, Bitmap image) {
 		this.title = title;
 		this.mpaa = mpaa;
 		this.year = year;
 		this.genres = genres;
+		this.actors = actors;
+		this.directors = directors;
 		this.coverart = image;
 	}
 	
@@ -35,6 +39,14 @@ public class Movie {
 	
 	public List<String> getGenres() {
 		return genres;
+	}
+	
+	public List<String> getActors() {
+		return actors;
+	}
+	
+	public List<String> getDirectors() {
+		return directors;
 	}
 	
 	public Bitmap getCoverart() {
