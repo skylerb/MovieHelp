@@ -34,7 +34,8 @@
         <activity
             android:name=".ActivityMovies"
             android:configChanges="orientation|screenSize" />
-        <activity android:name=".ActivityMovie" />
+        <activity android:name=".ActivityMovie"
+            android:configChanges="orientation|screenSize" />
     </application>
 
 </manifest>
