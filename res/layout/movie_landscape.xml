@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/striped_background"  >
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+   		android:orientation="vertical"
+   		android:layout_gravity="top"
+   		android:paddingLeft="12.0dip"
+   		android:paddingRight="4.0dip">        
+        <ImageView android:id="@+id/coverArtMovie"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:adjustViewBounds="true"
+	       	android:paddingTop="14.0dip"
+	        android:contentDescription="CoverArt"/>
+	    <TextView
+	   	    android:id="@+id/movie_subtitle_landscape"
+	   	    android:layout_width="fill_parent"
+	   	    android:layout_height="wrap_content"
+	   	    android:paddingTop="9.0dip"
+	   	    android:textColor="@color/light_grey"
+	   	    android:textSize="14.0dip" />      
+    </LinearLayout>
+    <ScrollView android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+	    <LinearLayout android:orientation="vertical"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent">
+            <TextView android:layout_height="wrap_content" 
+		   	    android:layout_width="wrap_content" 
+		   	    android:id="@+id/genres_header" 
+		   	    style="@style/Metadata_Header" 
+		   	    android:text="@string/genres_label"/>
+            <TextView android:layout_height="wrap_content" 
+		   	    android:layout_width="wrap_content" 
+		   	    android:id="@+id/genres_landscape" 
+		   	    style="@style/Metadata_Content"/>
+            <TextView android:layout_height="wrap_content" 
+		   	    android:layout_width="wrap_content" 
+		   	    android:id="@+id/actors_header" 
+		   	    style="@style/Metadata_Header" 
+		   	    android:text="@string/actors_label"/>
+            <TextView android:layout_height="wrap_content" 
+		   	    android:layout_width="wrap_content" 
+		   	    android:id="@+id/actors_landscape" 
+		   	    style="@style/Metadata_Content"/>
+            <TextView android:layout_height="wrap_content" 
+		   	    android:layout_width="wrap_content" 
+		   	    android:id="@+id/directors_header" 
+		   	    style="@style/Metadata_Header" 
+		   	    android:text="@string/directors_label"/>
+            <TextView android:layout_height="wrap_content" 
+		   	    android:layout_width="wrap_content" 
+		   	    android:id="@+id/directors_landscape" 
+		   	    style="@style/Metadata_Content"/>
+         </LinearLayout>
+  	</ScrollView>
+</LinearLayout>

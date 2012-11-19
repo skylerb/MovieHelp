@@ -11,7 +11,6 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.util.Log;
 import android.view.Display;
-import android.view.KeyEvent;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -27,7 +26,6 @@ public class ActivityMovie extends Activity {
 	private TextView movieActors;
 	private TextView movieGenres;
 	private TextView movieDirectors;
-	private ImageView fanArt;
 	private ImageView coverArt;
 	
 	@Override
